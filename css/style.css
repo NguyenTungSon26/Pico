@@ -118,6 +118,7 @@ body {
   width: 30px;
   height: 30px;
   background: url(../images/sprite.png) no-repeat -100px -8px;
+  /* cách cart xuống dưới cho cân dòng */
   margin-top: 7px;
 }
 #cart span {
@@ -125,12 +126,163 @@ body {
   display: block;
   width: 20px;
   height: 20px;
+  /* căn giữa theo chiều dọc */
   line-height: 20px;
   color: #fff;
   font-weight: bold;
+  /* căn giữa theo chiều ngang */
   text-align: center;
   background: #000;
   border-radius: 100%;
+  /* định vị */
   top: -7px;
   right: -7px;
+}
+#menu-title,
+#header-main-bottom-right {
+  height: 40px;
+  line-height: 40px;
+}
+#menu-title h2 {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #ee2e24;
+  border-radius: 10px 10px 0 0;
+}
+#menu-title h2 i {
+  margin: 0 10px;
+}
+#header-main-bottom-right {
+  display: flex;
+  justify-content: space-between;
+}
+#header-main-bottom-right a {
+  position: relative;
+  color: #333;
+  padding-left: 35px;
+}
+#header-main-bottom-right a i {
+  color: #ee2e24;
+  font-size: 18px;
+  font-weight: bold;
+}
+#header-main-bottom-right a::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  left: 0;
+}
+#header-main-bottom-right a:nth-child(1)::before {
+  background: url(../images/sprite.png) no-repeat -10px -50px;
+}
+#header-main-bottom-right a:nth-child(2)::before {
+  background: url(../images/sprite.png) no-repeat -60px -50px;
+}
+#header-main-bottom-right a:nth-child(3)::before {
+  background: url(../images/sprite.png) no-repeat -112px -50px;
+}
+#header-main-bottom-right a:nth-child(4)::before {
+  background: url(../images/sprite.png) no-repeat -165px -50px;
+}
+#header-main-bottom-right a:hover {
+  color: #ee2e24;
+  text-decoration: none;
+}
+#homepage {
+  background: #f5f5f5;
+}
+#homepage ul {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  /* bóng mờ */
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 10px 10px;
+}
+.menu-item {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  /* không cho xuống dòng. vượt qua li thì đã cho giá trị ban đầu */
+  white-space: nowrap;
+  /* ấn hết những thằng tràn ra bên ngoài */
+  overflow: hidden;
+  /* biến những nội dung tràn ra ngoài hiện dấu 3 chấm */
+  text-overflow: ellipsis;
+  /* bỏ chấm tròn */
+  list-style: none;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0 20px 0 10px;
+}
+.menu-item:hover {
+  background: #f5f5f5;
+}
+.menu-item i {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #c9c9c9;
+}
+.menu-item a {
+  position: relative;
+  color: #333;
+  padding-left: 30px;
+}
+.menu-item a:hover {
+  /* đưa chuột chuyển đỏ */
+  color: #ee2e24;
+  /* bỏ gạch chân */
+  text-decoration: none;
+  /* in đậm */
+  font-weight: bold;
+}
+.menu-item a::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  left: 0;
+}
+.menu-item:nth-child(1) a::before {
+  background: url(../images/cat_icon_01.png) no-repeat;
+}
+.menu-item:nth-child(2) a::before {
+  background: url(../images/cat_icon_02.png) no-repeat;
+}
+.menu-item:nth-child(3) a::before {
+  background: url(../images/cat_icon_03.png) no-repeat;
+}
+.menu-item:nth-child(4) a::before {
+  background: url(../images/cat_icon_04.png) no-repeat;
+}
+.menu-item:nth-child(5) a::before {
+  background: url(../images/cat_icon_05.png) no-repeat;
+}
+.menu-item:nth-child(6) a::before {
+  background: url(../images/cat_icon_06.png) no-repeat;
+}
+.menu-item:nth-child(7) a::before {
+  background: url(../images/cat_icon_07.png) no-repeat;
+}
+.menu-item:nth-child(8) a::before {
+  background: url(../images/cat_icon_08.png) no-repeat;
+}
+.menu-item:nth-child(9) a::before {
+  background: url(../images/cat_icon_09.png) no-repeat;
+}
+.menu-item:nth-child(10) a::before {
+  background: url(../images/cat_icon_10.png) no-repeat;
+}
+.menu-item:nth-child(11) a::before {
+  background: url(../images/cat_icon_11.png) no-repeat;
+}
+.menu-item:nth-child(12) a::before {
+  background: url(../images/cat_icon_12.png) no-repeat;
 }
