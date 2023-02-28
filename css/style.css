@@ -1,0 +1,136 @@
+body {
+  font-family: arial;
+  font-size: 14px;
+  color: #333;
+}
+#global-banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #cd020b;
+}
+#header-top {
+  height: auto;
+  background: #f5f5f5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#header-top a {
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+#header-top a:hover,
+#header-top a i {
+  color: #ee2e24;
+  text-decoration: none;
+}
+#header-top-right {
+  text-align: right;
+}
+#header-top-right a {
+  margin-left: 50px;
+}
+#header-main {
+  height: auto;
+  background: #fff;
+}
+#logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#search,
+#header-main-top-right {
+  padding-top: 25px;
+}
+#search input {
+  width: 75%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background: #f5f5f5;
+}
+#search button {
+  height: 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background: #ee2e24;
+  color: #fff;
+  padding: 0 15px;
+}
+#header-main-top-right {
+  display: flex;
+  justify-content: space-between;
+}
+#header-main-top-right a {
+  color: #333;
+}
+#follow a {
+  position: relative;
+  font-weight: bold;
+  padding-left: 40px;
+  display: inline-block;
+}
+#follow a::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprite.png) no-repeat -7px -8px;
+  top: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+#follow a:hover,
+#user a:hover {
+  text-decoration: none;
+  color: #ee2e24;
+}
+#follow a:hover::before {
+  top: 0;
+}
+#user a:first-child {
+  font-weight: bold;
+}
+#user a {
+  position: relative;
+  padding-left: 40px;
+}
+#user a:first-child::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprite.png) no-repeat -52px -8px;
+  top: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+#user a:first-child:hover::before {
+  top: 0;
+}
+#cart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url(../images/sprite.png) no-repeat -100px -8px;
+  margin-top: 7px;
+}
+#cart span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background: #000;
+  border-radius: 100%;
+  top: -7px;
+  right: -7px;
+}
