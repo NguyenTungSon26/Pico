@@ -207,8 +207,8 @@ body {
 }
 .menu-item {
   position: relative;
-  height: 32px;
-  line-height: 32px;
+  height: 30px;
+  line-height: 30px;
   /* không cho xuống dòng. vượt qua li thì đã cho giá trị ban đầu */
   white-space: nowrap;
   /* ấn hết những thằng tràn ra bên ngoài */
@@ -285,4 +285,48 @@ body {
 }
 .menu-item:nth-child(12) a::before {
   background: url(../images/cat_icon_12.png) no-repeat;
+}
+#slider li {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: #7f480e;
+  border: none;
+  opacity: 1;
+}
+#slider li:hover,
+#slider li.active {
+  background: #ffbf00;
+}
+
+#slider,
+#banner-right {
+  padding-top: 10px;
+}
+.banner-right-item {
+  margin-bottom: 15px;
+}
+.banner-bottom-item {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.banner-hover a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.banner-hover a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transform: skewX(-30deg);
+  top: 0;
+  left: -18%;
+}
+.banner-hover a:hover::before {
+  width: 115%;
+  background: transparent;
+  transition: all 0.5s;
 }
