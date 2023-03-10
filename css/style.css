@@ -330,3 +330,113 @@ body {
   background: transparent;
   transition: all 0.5s;
 }
+#product-hot-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  height: 60px;
+  line-height: 60px;
+  background: #ee2e24;
+  color: #fff;
+  text-transform: uppercase;
+  /* vì mặc định thằng h nó sẽ có margin-bottom mặc định nên sẽ đẩy khoảng cách xuống nên cần loại bỏ đi */
+  margin-bottom: 0;
+}
+#product-hot-title i {
+  position: relative;
+  padding-left: 52px;
+}
+
+#product-hot-title i::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 48px;
+  background: url(../images/sprite.png) no-repeat -7px -202px;
+  top: -10px;
+  left: 0;
+}
+#product-hot-body {
+  /* // padding 4 phía */
+  padding: 15px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #ee2e24;
+}
+.product-hot {
+  position: relative;
+}
+.product-hot-item {
+  position: relative;
+  border: none;
+  /* background: none; */
+}
+.product-hot-item > a > i {
+  position: absolute;
+  width: 48px;
+  height: 20px;
+  background: url(../images/icon-hot.png) no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+.product-hot-item > a > span {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: url(../images/icon-offer.png) no-repeat;
+  background-size: contain;
+  top: 0;
+  right: 0;
+}
+.product-hot-item h3 a {
+  font-size: 14px;
+  color: #333;
+}
+/* .product-hot-item > h3 > a:hover {
+  text-decoration: none;
+} */
+.product-hot-item > div {
+  display: flex;
+}
+.product-hot-item > div > p > b {
+  display: block;
+  font-size: 16px;
+  color: #ee2e24;
+}
+.product-hot-item > div > span {
+  display: block;
+  width: 43px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  color: #eee;
+  background: url(../images/bg-discount.png) no-repeat;
+  margin-left: 10px;
+}
+
+.view-all {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #ee2e24;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 60px;
+  border: 1px solid #ee2e24;
+  background: #fff;
+  border-radius: 64px;
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  transform: translateX(-50%);
+}
+.view-all:hover {
+  cursor: pointer;
+  background: #ee2e24;
+  color: #fff;
+  text-decoration: none;
+}
