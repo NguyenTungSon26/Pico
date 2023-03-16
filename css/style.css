@@ -440,3 +440,96 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.tab-product {
+  margin-top: 50px;
+  /* box-shadow: 0; */
+}
+.tab-product > ul {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.tab-product > ul > li > button {
+  color: #555;
+  text-transform: uppercase;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  border: 1px solid #b7b7b7 !important;
+  padding: 0 15px;
+  margin-right: 6px;
+  border-radius: 8px;
+}
+
+.tab-product > ul > li > button:hover,
+.tab-product > ul > li > button.active {
+  background: #ee2e24 !important;
+  border-color: #ee2e24 !important;
+  color: #fff !important;
+}
+.tab-product-inner {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.tab-product-item {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 13px 22px 13px;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+.tab-product-item > a {
+  position: relative;
+  display: block;
+  padding-bottom: 100%;
+}
+.tab-product-item > a > span {
+  position: absolute;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: url(../images/icon-offer.png) no-repeat;
+  background-size: contain;
+  top: 0;
+  right: 0;
+}
+.tab-product-item > a > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: block; */
+  transition: all 0.3s;
+}
+.tab-product-item:hover > a > img {
+  top: -7px;
+}
+
+.tab-product-item h3 {
+  font-size: 14px;
+}
+.tab-product-item h3 > a {
+  color: #222;
+  text-decoration: none;
+}
+.tab-product-item > div {
+  display: flex;
+}
+.tab-product-item > div > p > b,
+.tab-product-item > div > p > del {
+  display: block;
+}
+.tab-product-item > div > p > b {
+  color: #ee2e24;
+}
+.tab-product-item > div > p > del {
+  color: #888;
+}
+.tab-product-item > div > span {
+  width: 43px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  color: #eee;
+  background: url(../images/bg-discount.png) no-repeat;
+  margin-left: 10px;
+}
